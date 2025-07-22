@@ -1,10 +1,13 @@
 
 # ---------CREATING S3 DATA BUCKET  --------------
 resource "aws_s3_bucket" "thiss3" {
-  bucket = "${var.env}-${var.region}-${var.bucket_name}-logs"
+  # bucket = "${var.env}-${var.region}-${var.bucket_name}-logs"
+  bucket = "dev-us-east-1-warrior-0751raj-logs"
   tags = {
-    Name            = "${var.env}-${var.bucket_name}"
-    Environment     = var.env
+    # Name            = "${var.env}-${var.bucket_name}"
+    Name            = "warrior-0751raj"
+    # Environment     = var.env
+    Environment     = "dev"
     Managed_by      = "Terraform"
   }
 }
