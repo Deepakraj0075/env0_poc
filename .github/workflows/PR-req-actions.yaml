@@ -18,3 +18,4 @@ jobs:
           pr_title: "Automated PR: Merge dev-poc into main"
           pr_body: ":robot: This PR was auto-generated after push to dev-poc."
           pr_reviewer: "deepakraj0075" # Replace with your manager's GH username
+          github_token: "${{ secrets.GH_PAT }}"
