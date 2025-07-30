@@ -48,7 +48,7 @@ provider "aws" {
 
 # ------------------- EC2 INSTANCE ---------------------
 resource "aws_instance" "poc_demo_env_server" {
-  ami           = "ami-0d0ad8bb301edb745" 
+  ami           = "ami-01edd5711cfe3825c" 
   instance_type = "t2.micro"
   tags = {
     Name = "poc-demo-env-server"
