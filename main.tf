@@ -59,7 +59,7 @@ resource "aws_instance" "poc_demo_env_server" {
 resource "aws_s3_bucket" "thiss3" {
   bucket = "dev-us-east-1-warrior-0751raj"
   tags = {
-    Name         = "warrior-0751raj-warrior"
+    Name         = "warrior-0751raj-warrior-00756"
     Environment  = "dev"
     Managed_by   = "Terraform"
   }
