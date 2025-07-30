@@ -46,14 +46,14 @@ provider "aws" {
 }
 
 
-# ------------------- EC2 INSTANCE ---------------------
-resource "aws_instance" "poc_demo_env_server" {
-  ami           = "ami-01edd5711cfe3825c" 
-  instance_type = "t2.micro"
-  tags = {
-    Name = "poc-demo-env-server"
-  }
-}
+# # ------------------- EC2 INSTANCE ---------------------
+# resource "aws_instance" "poc_demo_env_server" {
+#   ami           = "ami-01edd5711cfe3825c" 
+#   instance_type = "t2.micro"
+#   tags = {
+#     Name = "poc-demo-env-server"
+#   }
+# }
 
 # ---------CREATING S3 DATA BUCKET --------------
 resource "aws_s3_bucket" "thiss3" {
