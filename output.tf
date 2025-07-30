@@ -24,12 +24,12 @@ output "s3_bucket_public_access_block_status" {
 }
 
 
-output "ec2_instance_id" {
-  description = "The ID of the EC2 instance"
-  value       = aws_instance.poc_demo_env_server.id
-}
+# output "ec2_instance_id" {
+#   description = "The ID of the EC2 instance"
+#   value       = aws_instance.poc_demo_env_server.id
+# }
 
-output "ec2_instance_public_ip" {
-  description = "The public IP of the EC2 instance"
-  value       = aws_instance.poc_demo_env_server.public_ip
-}
+# output "ec2_instance_public_ip" {
+#   description = "The public IP of the EC2 instance"
+#   value       = aws_instance.poc_demo_env_server.public_ip
+# }
