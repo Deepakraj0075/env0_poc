@@ -45,6 +45,16 @@ provider "aws" {
   # Or supply credentials with environment variables if not using profile
 }
 
+
+# ------------------- EC2 INSTANCE ---------------------
+resource "aws_instance" "poc_demo_env_server" {
+  ami           = "ami-0d0ad8bb301edb745" 
+  instance_type = "t2.micro"
+  tags = {
+    Name = "poc-demo-env-server"
+  }
+}
+
 # ---------CREATING S3 DATA BUCKET --------------
 resource "aws_s3_bucket" "thiss3" {
   bucket = "dev-us-east-1-warrior-0751raj-logs"
