@@ -57,7 +57,7 @@ provider "aws" {
 
 # ---------CREATING S3 DATA BUCKET --------------
 resource "aws_s3_bucket" "thiss3" {
-  bucket = "dev-us-east-1-warrior-0751raj"
+  bucket = "dev-us-east-1-warrior-0751raj-warrior"
   tags = {
     Name         = "warrior-0751raj-warrior-00756"
     Environment  = "dev"
